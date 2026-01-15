@@ -2,7 +2,7 @@ public class pair {
 
     public static void pair(int arr[]) {
 
-
+          int tp=0 ;
         
 
         for( int i=0; i < arr.length-1;i++)
@@ -11,10 +11,15 @@ public class pair {
             for(int j=i+1; j < arr.length; j++)
             {
                 System.out.print("(" + arr[i] +"+"+ arr[j] +")");
+
+                tp ++;
             }
 
             System.err.println();
         }
+
+
+        System.out.println(tp);
         
     }
 
